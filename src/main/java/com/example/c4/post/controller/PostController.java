@@ -30,14 +30,12 @@ public class PostController {
         return postService.savePost(postDTO);
     }
 
-    //Todo Update
     @PutMapping("/posts/{id}")
     public Post updatePost(@PathVariable("id")Long id, @RequestBody PostDTO postDTO){
         return postService.updatePost(id, postDTO);
     }
 
 
-    //Todo Delete
     @DeleteMapping("/posts/{id}")
     public void deletePost(@PathVariable("id")Long id){
         postService.deletePost(id);
