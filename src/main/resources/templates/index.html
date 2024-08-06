@@ -1,93 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wook's Repository</title>
-    <!-- Tailwind CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>C4-Racers</title>
+    <style>
+        #title{
+            background-color : gray;
+            color : white;
+        }
+
+        .list-item{
+            color : green;
+        }
+
+        .selected{
+            font-weight : 900;
+            font-size : large;
+        }
+
+        #main-image{
+            width : 800px;
+            height : 400px;
+        }
+
+        ol{
+            color : blue;
+        }
+
+        p{
+            font-weight : 900;
+        }
+    </style>
 </head>
+<body>
+    <h1 id = "title" style="color : silver">index page</h1>
+    <p>안녕하세요 index 페이지입니다.</p>
+    <hr>
+    <p>Image Tag</p>
+    <img src="https://images.unsplash.com/photo-1722723457975-0836b1f68b26?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" id="main-image" alt="analog photo"/>
+    <br>
+    <hr>
+    <br>
 
-<body class="bg-gray-100">
-<!-- Header -->
-<header class="bg-gray-800 text-white">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div class="text-lg font-bold">
-            Wook's
-        </div>
-        <nav>
-            <ul class="flex space-x-4">
-                <li><a href="#" class="hover:underline">Home</a></li>
-                <li><a href="https://cloudtrack.elice.io/explore" class="hover:underline">Elice</a></li>
-                <li><a href="https://www.notion.so/elice-track/Cloud-4-f43d4f429ba04b299f6e55639cee9e7a" class="hover:underline">Cloud4</a></li>
-                <li><a href="https://chat.openai.com/" class="hover:underline">C-GPT</a></li>
-            </ul>
-        </nav>
+    button Tag
+    <button id = "button1">버튼</button>
+    <button id = "button2">버튼</button>
+
+    <br>
+    <hr>
+    <br>
+
+    a Tag
+    <div>
+        <a href="https://google.com" target="_blank">구글로 이동</a>
     </div>
-</header>
-
-<!-- Main Content -->
-<main class="container mx-auto px-4 py-8">
-    <section class="bg-white shadow-md rounded-lg p-6">
-        <h1 class="text-2xl font-bold mb-4">Welcome to JinWook Repository</h1>
-        <p class="mb-4">Jinwook's webpage allows you to navigate to his website.</p>
-        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Get Started</a>
-    </section>
-
-
-
-
-    <!-- Web Link Section -->
-    <section class="mt-8">
-        <h2 class="text-xl font-bold mb-4">Wook's</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="bg-white shadow-md rounded-lg p-6">
-                <h2 class="text-xl font-bold mb-2">GitHub</h2>
-                <a href = "https://github.com/wook219" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Click here</a>
-            </div>
-            <div class="bg-white shadow-md rounded-lg p-6">
-                <h2 class="text-xl font-bold mb-2">GitLab</h2>
-                <a href = "https://kdt-gitlab.elice.io/cloud_track/class_04/class_041/project/jinwook-java" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Click here</a>
-            </div>
-            <div class="bg-white shadow-md rounded-lg p-6">
-                <h2 class="text-xl font-bold mb-2">Notion</h2>
-                <a href = "https://www.notion.so/elice-track/3f63014304614af9a58d2d8f40aaef52" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Click here</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="mt-8">
-        <h2 class="text-xl font-bold mb-4">Algorithm</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="bg-white shadow-md rounded-lg p-6">
-                <h2 class="text-xl font-bold mb-2">Baekjoon</h2>
-                <a href = "https://www.acmicpc.net/" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Click here</a>
-            </div>
-            <div class="bg-white shadow-md rounded-lg p-6">
-                <h2 class="text-xl font-bold mb-2">Programmers</h2>
-                <a href = "https://programmers.co.kr/" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Click here</a>
-            </div>
-            <div class="bg-white shadow-md rounded-lg p-6">
-                <h2 class="text-xl font-bold mb-2">Inflearn</h2>
-                <a href = "https://www.inflearn.com/" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Click here</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- YouTube Video Section -->
-    <section class="mt-8">
-        <h2 class="text-xl font-bold mb-4">Featured Video</h2>
-        <div class="aspect-w-16 aspect-h-9" style="height: 800px;">
-            <iframe class="w-full h-full" src="https://www.youtube.com/embed/h57b1-ys2L0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
-</main>
-
-<!-- Footer -->
-<footer class="bg-gray-800 text-white mt-8">
-    <div class="container mx-auto px-4 py-4 text-center">
-        <p>&copy; 2024 Wook's. All rights reserved.</p>
+    <div>
+        <a href="https://naver.com" target="_blank">네이버로 이동</a>
     </div>
-</footer>
+
+    <br>
+    <hr>
+    <br>
+
+    h Tag
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+
+    p Tag
+    <p>this is p tag.</p>
+
+    <hr>
+
+    ul Tag
+    <h3>순서가 없는 리스트 태그</h3>
+    <ul>
+        <li class="list-item">list 1</li>
+        <li class="list-item selected">list 2</li>
+        <li class="list-item">list 3</li>
+    </ul>
+
+    <br>
+
+    ol Tag
+    <h3>순서가 있는 리스트 태그</h3>
+    <ol>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+    </ol>
+
+    <br>
+    <hr>
+    <br>
+
+    div Tag
+    <h3>div : block</h3>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+    <br>
+    <hr>
+    <br>
+
+    span Tag
+    <h3>span : inline</h3>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+
+    <br>
+    <hr>
+    <br>
+
+    table Tag
+    <table border="1">
+        <tr>
+            <th>column 1</th>
+            <th>column 2</th>
+            <th>column 3</th>
+        </tr>
+
+        <tr>
+            <td>first data</td>
+            <td>second data</td>
+            <td>third data</td>
+        </tr>
+
+        <tr>
+            <td>first data</td>
+            <td>second data</td>
+            <td>third data</td>
+        </tr>
+
+        <tr>
+            <td>first data</td>
+            <td>second data</td>
+            <td>third data</td>
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+    <br>
+
+    form Tag
+    <form action="/login" method="POST" name="login">
+        <br>
+        <label for="email">email :</label>
+            <input id = "email" type="email"/>
+        <br>
+        <br>
+
+        <label for="password">password :</label>
+            <input id = "password" type="password"/>
+        <br>
+        <br>
+
+        <label for="rememberId">rememberId :</label>
+        <input id="rememberId" type="radio">
+        <br>
+        <br>
+
+        <label for="auto-login">auto-login :</label>
+        <input id="auto-login" type="checkbox">
+        <br>
+        <br>
+
+        <textarea name="contents", placeholder="input pin-number" cols="20" rows="1"></textarea>
+        <br>
+        <br>
+
+        <input id = "login-submit" type="button" value="log-in">
+        <br>
+        <br>
+    </form>
 </body>
 </html>
+
