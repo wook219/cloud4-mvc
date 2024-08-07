@@ -1,0 +1,26 @@
+#title{
+    background-color : gray;
+    color : white;
+}
+
+.list-item{
+    color : green;
+}
+
+.selected{
+    font-weight : 900;
+    font-size : large;
+}
+
+#main-image{
+    width : 800px;
+    height : 400px;
+}
+
+ol{
+    color : blue;
+}
+
+p{
+    font-weight : 900;
+}
