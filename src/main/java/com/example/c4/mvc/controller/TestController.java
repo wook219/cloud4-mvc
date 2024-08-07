@@ -25,4 +25,15 @@ public class TestController {
     public String getWookPage(){
         return "wook";
     }
+
+
+    @GetMapping("/login")
+    public String getLoginPage(){
+        return "login";
+    }
+
+    @GetMapping("/js-practice")
+    public String getJsPage(){
+        return "jsPage";
+    }
 }
